@@ -24,13 +24,8 @@ AM_CPPFLAGS = -Iinclude\
 
 SRCDIR = src
 
-bin_PROGRAMS = bst stat
+bin_PROGRAMS = rand
 
-bst_SOURCES = src/bst.c src/bst/tree.c
-bst_LIBS =
-bst_LDADD = ${bst_LIBS}
-
-
-stat_SOURCES = src/stat.c src/stat/statarray.c
-stat_LIBS =
-stat_LDADD = ${bst_LIBS}
+rand_SOURCES = src/rand.c src/rand/int.c src/rand/array.c
+rand_LIBS =
+rand_LDADD = ${rand_LIBS}
